@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--SEO description-->
+  <meta name="description" content="TE academic registration" />
+  <!--Keyword-->
+  <meta name="keywords" contesnt="AVCOE,TE,Registration,Form,Armutvahini" />
+  <meta name="Author" content="Shivraj Kolpe" />
+  <title>Registration: TE</title>
+  <!--.ico file is needed-->
+  <link rel="shortcut icon" href="college logo.png" type="image/x-icon" />
+</head>
+
+<body>
+  <header>
+    <center>
+      <!-- To align all text to center-->
+      <hr size="3px" color="black" noshade />
+      <h1>TE Registration Form</h1>
+      <img src="college logo.png" alt="AVCOE" width="120px">
+      <h2>Academic Year 2021-22</h2>
+      <!-- <iframe src="https://www.avcoe.org/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" width="400px" height="200px"></iframe> -->
+      <em>
+        <h3><a href="https://www.avcoe.org/" target="_main">Avcoe's official website</a></h3>
+      </em>
+      <hr size="3px" color="black" noshade />
+    </center>
+  </header>
+
+  <main>  
+    <form action="forms.html">
+      <section>
+        <!--Student's Personal Information-->
+        <label for="personali">
+          <h3><u>Personal Information</u></h3>
+          <ol type="1">
+            <li>
+              Name
+              <br />
+              <input type="text" name="fn" placeholder="Full name" id="personali" required />
+            </li>
+            <br />
+            <li>
+              Contact No.
+              <br />
+              <input type="tel" name="phone" placeholder="+91" id="personali" requird />
+            </li>
+            <br />
+            <li>
+              Blood Group
+              <div>
+                <label for="bA+">
+                  <input type="radio" value="blood A+" name="BG" id="bA+" required />
+                  A+
+                </label>
+                <br />
+                <label for="bA-">
+                  <input type="radio" value="blood A-" name="BG" id="bA-" required />
+                  A-
+                </label>
+                <br />
+                <label for="bB+">
+                  <input type="radio" value="blood B+" name="BG" id="bB+" required />
+                  B+
+                </label>
+                <br />
+                <label for="bB-">
+                  <input type="radio" value="blood B-" name="BG" id="bB-" required />
+                  B-
+                </label>
+                <br />
+                <label for="bO+">
+                  <input type="radio" value="blood O+" name="BG" id="bO+" required />
+                  O+
+                </label>
+                <br />
+                <label for="bO-">
+                  <input type="radio" value="blood O-" name="BG" id="bO-" required />
+                  O-
+                </label>
+                <br />
+                <label for="bAb+">
+                  <input type="radio" value="blood AB+" name="BG" id="bAB+" required />
+                  AB+
+                </label>
+                <br />
+                <label for="bAB-">
+                  <input type="radio" value="blood AB-" name="BG" id="bAB-" required />
+                  AB-
+                </label>
+                <br />
+              </div>
+            </li>
+            <br />
+            <li>
+              Date of birth
+              <br />
+              <input type="date" id="personali" value="" name="DOB" min="1995-01-01" max="2003-01-01" required />
+            </li>
+            <br />
+            <li>
+              Profile Photo
+              <br />
+              <input type="file" accept="image/png, image/jpeg" required />
+            </li>
+            <br />
+            <li>Permanent Address</li>
+            <textarea name="Addr" placeholder="Address" id="addr" cols="35" rows="7"></textarea>
+          </ol>
+        </label>
+      </section>
+      <hr size="3px" color="black" noshade />
+      <section>
+        <label for="academici">
+          <h3><u>Academic Information</u></h3>
+          <ol type="1">
+            <li>
+              ERP no.
+              <br />
+              <input type="text" placeholder="19000" name="UG" id="academici" required />
+            </li>
+            <br />
+            <li>
+              University PRN no.
+              <br />
+              <input type="text" name="PRN" id="PRN" />
+            </li>
+            <br />
+            <li>
+              Division
+              <br />
+              <div>
+                <label for="sectiona">
+                  <input type="radio" name="section" value="div a" id="sectiona" required />
+                  A
+                </label>
+                <br />
+                <label for="sectionb">
+                  <input type="radio" name="section" value="div b" id="sectionb" required />
+                  B
+                </label>
+              </div>
+            </li>
+            <br />
+            <li>
+              Email
+              <br />
+              <input type="email" name="ed" pattern=".+@gmail\.com" size="30" required />
+            </li>
+            <br />
+            <li>
+              Select your Honor's Course
+              <select name="honors" id="honors">
+                <option value="none">Not Applied</option>
+                <option value="Data Science">Data Science</option>
+                <option value="ICS">Information and Cyber Security</option>
+                <option value="AIML">AL & ML</option>
+              </select>
+            </li>
+            <br />
+          </ol>
+        </label>
+      </section>
+      <center>
+        <input type="submit" width="5" />
+      </center>
+    </form>
+  </main>
+  <footer>
+    <strong><em><a href="https://www.avcoe.org/contact.php" target="_main">Contact us</a></em></strong>
+  </footer>
+</body>
+
+</html>
