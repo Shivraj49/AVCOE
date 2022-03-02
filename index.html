@@ -11,7 +11,7 @@
   <meta name="keywords" contesnt="AVCOE,TE,Registration,Form,Armutvahini" />
   <meta name="Author" content="Shivraj Kolpe" />
   <title>Registration: TE</title>
-  <!--.ico file is needed-->
+  <!-- .ico file is needed -->
   <link rel="shortcut icon" href="college logo.png" type="image/x-icon" />
   <style>
     body{
@@ -71,7 +71,7 @@
       <!-- To align all text to center-->
       <hr size="3px" color="black" noshade />
       <h1>TE Registration Form</h1>
-      <img src="college logo.png" alt="AVCOE" width="120px">
+      <img src="/HTML/images/college logo.png" alt="AVCOE" width="120px">
       <h2>Academic Year 2021-22</h2>
       <!-- <iframe src="https://www.avcoe.org/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" width="400px" height="200px"></iframe> -->
       <em>
@@ -81,12 +81,13 @@
     </center>
   </header>
 
-  <main>  
+  <main>
     <form action="forms.html">
       <section>
         <!--Student's Personal Information-->
         <label for="personali">
-          <h3><u>Personal Information</u></h3>
+          <h3 id="pi"><span>
+              Personal Information</span></h3>
           <ol type="1">
             <li>
               Name
@@ -166,7 +167,7 @@
       <hr size="3px" color="black" noshade />
       <section>
         <label for="academici">
-          <h3><u>Academic Information</u></h3>
+          <h3 id="pi"><span>Academic Information</span></h3>
           <ol type="1">
             <li>
               ERP no.
@@ -216,7 +217,7 @@
         </label>
       </section>
       <center>
-        <input type="submit" width="5" />
+        <button id="but">Submit</button>
       </center>
     </form>
   </main>
